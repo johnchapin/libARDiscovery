@@ -108,7 +108,7 @@ AC_HEADER_STDC
 AC_LANG_PUSH([Objective C])
 if test x$ac_cv_objc_compiler_gnu = xyes; then
     AC_CHECK_HEADERS([CoreBluetooth/CoreBluetooth.h arpa/inet.h netdb.h Foundation/Foundation.h],
-        [LDFLAGS="$LDFLAGS -framework CoreBluetooth"],
+        [LDFLAGS="$LDFLAGS -framework IOBluetooth"],
         AC_MSG_WARN(Missing headers for Bonjour support))
 else
     AC_MSG_WARN(No Objective-C support on the given platform)
